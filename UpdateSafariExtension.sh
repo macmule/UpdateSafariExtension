@@ -47,14 +47,14 @@ fi
 extensionCount=0
 
 ## Echo what we're doing
-echo "Updating extensions with $pathToExtension..."
+echo "Updating extensions with $4..."
 
 ## Check for home folders under /Users/
 for userHome in /Users/*; do
 	## If the below folder exists
   	if [ -d "${userHome}/Library/Safari/Extensions" ]; then
   		## Check for the Extension, using the regex as specified at $5 then replace with the Extension at path $4
-    	find "${userHome}/Library/Safari/Extensions" -type f -regex '.*Pentland Toolbar.*' -exec cp -v "${pathToExtension}" "{}" \;
+    	find "${userHome}/Library/Safari/Extensions" -type f -regex '.*$5.*' -exec cp -v "${4}" "{}" \;
 		## Increments
 		extensionCount=$((extensionCount+1))
   	fi
