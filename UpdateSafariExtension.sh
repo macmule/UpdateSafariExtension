@@ -1,7 +1,7 @@
 #!/bin/bash
 ####################################################################################################
 #
-# More information: 
+# More information: https://macmule.com/2015/09/25/updating-safari-extensions/
 #
 # GitRepo: https://github.com/macmule/UpdateSafariExtension
 #
