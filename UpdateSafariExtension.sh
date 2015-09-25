@@ -54,7 +54,7 @@ for userHome in /Users/*; do
 	## If the below folder exists
   	if [ -d "${userHome}/Library/Safari/Extensions" ]; then
   		## Check for the Extension, using the regex as specified at $4 then replace with the Extension at path $5
-    	find "${userHome}/Library/Safari/Extensions" -type f -regex '.*'"$extensionRegex"'.*' -exec cp -v "${pathToExtension}" "{}" \;
+    		find "${userHome}/Library/Safari/Extensions" -type f -regex '.*'"$extensionRegex"'.*' -exec cp -v "${pathToExtension}" "{}" \;
 		## Increments
 		extensionCount=$((extensionCount+1))
   	fi
